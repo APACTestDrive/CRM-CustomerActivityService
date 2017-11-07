@@ -2,31 +2,31 @@ package com.oracle.testdrive.offer;
 
 public class OfferDetail {
     
-    String offerid;
-    String offername;
+    String id;
+    String name;
     String points;
     String message;
+    String productid;
     String productname;
     String productprice;
     String productimage;
     String productdesc;
-    String productid;
 
 
-    public void setOfferid(String offerid) {
-        this.offerid = offerid;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getOfferid() {
-        return offerid;
+    public String getId() {
+        return id;
     }
 
-    public void setOffername(String offername) {
-        this.offername = offername;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getOffername() {
-        return offername;
+    public String getName() {
+        return name;
     }
 
     public void setPoints(String points) {
@@ -87,6 +87,6 @@ public class OfferDetail {
     
     @Override
     public String toString() {
-        return "OfferDetail [offerid=" + offerid + ", offername=" + offername + ", points=" + points + ", message=" + message + ", productname=" + productname + ", productprice=" + productprice + ", productimage=" + productimage + ", productdesc=" + productdesc + ", productid=" + productid + "]";
+        return "OfferDetail [id=" + id + ", name=" + name + ", points=" + points + ", message=" + message + ", productid=" + productid + ", productname=" + productname + ", productprice=" + productprice + ", productimage=" + productimage + ", productdesc=" + productdesc + "]";
     }
 }

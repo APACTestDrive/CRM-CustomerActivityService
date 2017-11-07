@@ -22,10 +22,10 @@ public class OfferDetailService {
         OfferDetail offerdetail = new OfferDetail();
         try {
             DataSource ds = (DataSource) new InitialContext().lookup("jdbc/loyaltyDS");
-            ResultSet rs = ds.getConnection().createStatement().executeQuery("SELECT offers.id, offername, points, message, productname, productprice, productimage, productdesc, productid FROM offers, product WHERE offers.id = " + offerid + " AND product.id = offers.productid");
+            ResultSet rs = ds.getConnection().createStatement().executeQuery("SELECT offers.id, offers.offername, offers.points, offers.message, product.productname, product.productprice, product.productimage, product.productdesc, offers.productid FROM offers, product WHERE offers.id = " + offerid + " AND product.id = offers.productid");
             while(rs.next()) {
-                offerdetail.setOfferid(offerid);
-                offerdetail.setOffername(rs.getString("OFFERNAME"));
+                offerdetail.setId(offerid);
+                offerdetail.setName(rs.getString("OFFERNAME"));
                 offerdetail.setPoints(rs.getBigDecimal("POINTS").toString());
                 offerdetail.setMessage(rs.getString("MESSAGE"));
                 offerdetail.setProductid(rs.getBigDecimal("PRODUCTID").toString());
