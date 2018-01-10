@@ -1,5 +1,6 @@
 package com.oracle.testdrive.offer;
 
+import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -10,7 +11,9 @@ import javax.sql.DataSource;
 import java.sql.ResultSet;
 import javax.naming.*;
 
-@Path("/offer")
+import javax.ws.rs.ApplicationPath;
+
+@Path("/ptmgt/v1/offers")
 public class OfferDetailService {
     public OfferDetailService() {
     }
