@@ -119,6 +119,7 @@
       <list n="technologyScope">
          <string v="EJB"/>
          <string v="Java"/>
+         <string v="RESTWebServices"/>
          <string v="WSDL"/>
          <string v="WSPolicy"/>
          <string v="WebServices"/>
@@ -343,6 +344,10 @@
             <value n="id" v="EJB"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="JAX-RS Jersey 2.x"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
       <list n="libraryReferences">
          <hash>
@@ -359,6 +364,10 @@
          </hash>
          <hash>
             <value n="id" v="EJB"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JAX-RS Jersey 2.x"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
