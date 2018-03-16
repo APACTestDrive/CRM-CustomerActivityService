@@ -24,5 +24,6 @@
    </list>
    <list n="listOfChildren">
       <hash><url n="URL" path="TD_CRM.jpr"/></hash>
+      <hash><url n="URL" path="TD_PTMGT/TD_PTMGT.jpr"/></hash>
    </list>
 </jws:workspace>

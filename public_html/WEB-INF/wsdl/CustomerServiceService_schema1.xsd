@@ -2,7 +2,7 @@
 <xsd:schema xmlns:ns0="http://crm.testdrive.oracle.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://crm.testdrive.oracle.com/">
   <xsd:complexType name="addCustomerActivity">
     <xsd:sequence>
-      <xsd:element name="customerId" type="xsd:int"/>
+      <xsd:element name="customerId" type="xsd:string"/>
       <xsd:element name="activityName" type="xsd:string"/>
       <xsd:element name="activityDetail" type="xsd:string"/>
       <xsd:element name="activityDate" type="xsd:string"/>

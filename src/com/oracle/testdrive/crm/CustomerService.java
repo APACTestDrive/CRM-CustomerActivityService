@@ -17,7 +17,7 @@ public class CustomerService {
     public CustomerService() {}
 
     @WebMethod
-    public String addCustomerActivity(@WebParam(name = "customerId") int customerId,
+    public String addCustomerActivity(@WebParam(name = "customerId") String customerId,
                                       @WebParam(name = "activityName") String activityName,
                                       @WebParam(name = "activityDetail") String activityDetail,
                                       @WebParam(name = "activityDate") String activityDate) {
@@ -31,7 +31,7 @@ public class CustomerService {
         System.out.println("activityDate is: " + activityDate);
         if (activityName != "" && activityName != null) {
             randomNum = ThreadLocalRandom.current().nextInt(min, max + 1);
-            activityId = String.valueOf(customerId) + "-" + String.valueOf(randomNum) + "-v1.0";
+            activityId = customerId + "-" + String.valueOf(randomNum) + "-v1.0";
             System.out.println("activityId is: " + activityId);
         }
         

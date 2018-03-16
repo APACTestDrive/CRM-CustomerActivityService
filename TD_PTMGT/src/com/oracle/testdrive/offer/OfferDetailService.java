@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 import java.sql.ResultSet;
 import javax.naming.*;
 
-@Path("/ptmgt/v1/offers")
+@Path("/offers")
 public class OfferDetailService {
 
     @GET
